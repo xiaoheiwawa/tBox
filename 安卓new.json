@@ -168,6 +168,47 @@
 		"keepPlayFileKeywords": "",
         "selectedPlayer":"0"
 	},{
+ 		"key": "shandian",
+    		"name": "⚡️闪电┃UC盘",
+  	  	"type": 5,
+    		"searchable": 1,
+    		"filterClass": "",
+    		"firstClass": "",
+    		"filterPlay": "",
+   		"firstPlay": "",
+    		"ext": "https://ghproxy.cn/https://raw.githubusercontent.com/alantang1977/tBox/refs/heads/main/newjs/shandian.js",
+    		"flagable": 0,
+    		"filterPlayFileKeywords": "",
+    		"keepPlayFileKeywords": "",
+    		"selectedPlayer": "0"
+  	},{
+    		"key": "omii",
+    		"name": "🌕奥秘┃网盘",
+    		"type": 5,
+    		"searchable": 1,
+    		"filterClass": "",
+    		"firstClass": "",
+    		"filterPlay": "",
+    		"firstPlay": "",
+    		"ext": "https://ghproxy.cn/https://raw.githubusercontent.com/alantang1977/tBox/refs/heads/main/newjs/omii.js",
+    		"flagable": 0,
+    		"filterPlayFileKeywords": "",
+    		"keepPlayFileKeywords": "",
+    		"selectedPlayer": "0"
+  	},{
+    		"key": "wwgz",
+    		"name": "🐶旺旺┃嗅探",
+    		"type": 6,
+    		"searchable": 1,
+    		"filterClass": "",
+    		"firstClass": "",
+    		"filterPlay": "",
+    		"firstPlay": "",
+    		"ext": "https://ghproxy.cn/https://raw.githubusercontent.com/alantang1977/tBox/refs/heads/main/newjs/wwgz_soup.json",
+    		"flagable": 0,
+    		"filterPlayFileKeywords": "",
+    		"keepPlayFileKeywords": ""
+  	},{
 		"key": "libvio",
 		"name": "🌏libvio|不卡",
 		"type": 5,
