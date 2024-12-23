@@ -531,6 +531,20 @@
 		"keepPlayFileKeywords": "",
 		"selectedPlayer": "0"
 	},{
+    "key": "网盘推送",
+    "name": "💗网盘┃推送",
+    "type": 5,
+    "searchable": 0,
+    "filterClass": "",
+    "firstClass": "",
+    "filterPlay": "",
+    "firstPlay": "",
+    "ext": "https://ghproxy.cn/https://raw.githubusercontent.com/tt9912/tBox/refs/heads/main/newjs/网盘推送.js",
+    "flagable": 0,
+    "filterPlayFileKeywords": "",
+    "keepPlayFileKeywords": "",
+    "selectedPlayer": "0"
+  },{
 		"key": "yunpan",
 		"name": "夸克云盘┃仅搜索",
 		"type": 5,
