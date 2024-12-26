@@ -593,11 +593,11 @@
 		"firstClass": "",
 		"filterPlay": "",
 		"firstPlay": "",
-		"ext": "https://ghproxy.cn/https://raw.githubusercontent.com/alantang1977/tBox/refs/heads/main/json/yunpansou.js",
+		"ext": "https://ghproxy.cn/https://raw.githubusercontent.com/alantang1977/tBox/refs/heads/main/newjs/yunpansou.js",
 		"flagable": 0,
 		"filterPlayFileKeywords": "",
 		"keepPlayFileKeywords": ""
-	}{
+	},{
 		"key": "kuwosong",
 		"name": "🎵酷我┃音乐",
 		"type": 5,
@@ -610,21 +610,7 @@
 		"flagable": 0,
 		"filterPlayFileKeywords": "",
 		"keepPlayFileKeywords": "",
-		"selectedPlayer": "2"
-	},{
-		"key": "6yueting",
-		"name": "6️⃣六月┃听书",
-		"type": 5,
-		"searchable": 1,
-		"filterClass": "",
-		"firstClass": "",
-		"filterPlay": "",
-		"firstPlay": "",
-		"ext": "https://ghproxy.cn/https://raw.githubusercontent.com/alantang1977/tBox/refs/heads/main/newjs/6yueting.js",
-		"flagable": 0,
-		"filterPlayFileKeywords": "",
-		"keepPlayFileKeywords": "",
-		"selectedPlayer": "2"
+		"selectedPlayer": "0"
 	},{
 		"key": "haiyang",
 		"name": "🌊海洋┃听书",
@@ -638,7 +624,7 @@
 		"flagable": 0,
 		"filterPlayFileKeywords": "",
 		"keepPlayFileKeywords": "",
-		"selectedPlayer": "2"
+		"selectedPlayer": "0"
 	},{
 		"key": "kuwotingshu",
 		"name": "🎧酷我┃听书",
@@ -652,7 +638,7 @@
 		"flagable": 0,
 		"filterPlayFileKeywords": "",
 		"keepPlayFileKeywords": "",
-		"selectedPlayer": "2"
+		"selectedPlayer": "0"
 	},{
 		"key": "qtradio",
 		"name": "🎧蜻蜓┃FM广播",
@@ -666,7 +652,7 @@
 		"flagable": 0,
 		"filterPlayFileKeywords": "",
 		"keepPlayFileKeywords": "",
-		"selectedPlayer": "2"
+		"selectedPlayer": "0"
 	}],
 	"parses": [{
 		"name": "解析1",
