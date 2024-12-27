@@ -1,5 +1,19 @@
 {
 	"sites": [{
+		"key": "subaibai",
+		"name": "🌥素白白┃直链",
+		"type": 5,
+		"searchable": 1,
+		"filterClass": "",
+		"firstClass": "国产剧,番剧",
+		"filterPlay": "",
+		"firstPlay": "",
+		"ext": "https://ghproxy.cn/https://raw.githubusercontent.com/alantang1977/tBox/refs/heads/main/json/subaibai.js",
+		"flagable": 0,
+		"filterPlayFileKeywords": "",
+		"keepPlayFileKeywords": "",
+		"selectedPlayer": "0"
+	},{
 	"key": "mogg",
 	"name": "🤹‍♂️木偶┃UC盘",
 	"type": 5,
@@ -302,20 +316,6 @@
 		"filterPlay": "",
 		"firstPlay": "",
 		"ext": "https://ghproxy.cn/https://raw.githubusercontent.com/alantang1977/tBox/refs/heads/main/json/qiyou.js",
-		"flagable": 0,
-		"filterPlayFileKeywords": "",
-		"keepPlayFileKeywords": "",
-		"selectedPlayer": "0"
-	},{
-		"key": "subaibai",
-		"name": "🌥素白白┃直链",
-		"type": 5,
-		"searchable": 1,
-		"filterClass": "",
-		"firstClass": "国产剧,番剧",
-		"filterPlay": "",
-		"firstPlay": "",
-		"ext": "https://ghproxy.cn/https://raw.githubusercontent.com/alantang1977/tBox/refs/heads/main/json/subaibai.js",
 		"flagable": 0,
 		"filterPlayFileKeywords": "",
 		"keepPlayFileKeywords": "",
