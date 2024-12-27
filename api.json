@@ -598,6 +598,20 @@
 		"filterPlayFileKeywords": "",
 		"keepPlayFileKeywords": ""
 	},{
+		"key": "vq",
+		"name": "🐹腾云驾雾┃官网",
+		"type": 5,
+		"searchable": 1,
+		"filterClass": "",
+		"firstClass": "",
+		"filterPlay": "",
+		"firstPlay": "腾云驾雾",
+		"ext": "https://ghproxy.cn/https://raw.githubusercontent.com/alantang1977/tBox/refs/heads/main/json/vq.js",
+		"flagable": 0,
+		"filterPlayFileKeywords": "",
+		"keepPlayFileKeywords": "",
+		"selectedPlayer": "0"
+	},{
 		"key": "kuwosong",
 		"name": "🎵酷我┃音乐",
 		"type": 5,
