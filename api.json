@@ -574,19 +574,6 @@
 		"filterPlayFileKeywords": "",
 		"keepPlayFileKeywords": ""
 	},{
-		"key": "danmu_zonghe",
-		"name": "3️⃣360影视┃弹幕版",
-		"type": 5,
-		"searchable": 1,
-		"filterClass": "",
-		"firstClass": "",
-		"filterPlay": "",
-		"firstPlay": "qq,youku,imgo,qiyi,bilibili1",
-		"ext": "https://ghproxy.cn/https://raw.githubusercontent.com/alantang1977/xBox/refs/heads/main/json/danmu_zonghe.js",
-		"flagable": 1,
-		"filterPlayFileKeywords": "",
-		"keepPlayFileKeywords": ""
-	},{
 		"key": "ruyizy",
 		"name": "😄如意┃资源",
 		"type": 0,
@@ -772,19 +759,6 @@
 		"filterPlay": "",
 		"firstPlay": "",
 		"ext": "https://ghproxy.cn/https://raw.githubusercontent.com/alantang1977/xBox/refs/heads/main/newjs/yunpansou.js",
-		"flagable": 0,
-		"filterPlayFileKeywords": "",
-		"keepPlayFileKeywords": ""
-	},{
-		"key": "yingso",
-		"name": "🎏影搜盘搜┃仅搜索",
-		"type": 5,
-		"searchable": 1,
-		"filterClass": "",
-		"firstClass": "",
-		"filterPlay": "",
-		"firstPlay": "",
-		"ext": "https://ghproxy.cn/https://raw.githubusercontent.com/alantang1977/xBox/refs/heads/main/json/yingso.js",
 		"flagable": 0,
 		"filterPlayFileKeywords": "",
 		"keepPlayFileKeywords": ""
