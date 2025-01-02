@@ -37,7 +37,7 @@ class BackData {
 }
 
 
-//let result = await searchDanMu("熊猫计划","1");
+//let result = await searchDanMu("年会不能停！","1");
 //console.log(result);
 
 
@@ -52,7 +52,6 @@ async function searchDanMu(name, episode, playurl) {
   let backData = new BackData();
   try {
     let all = [];
-    // MARK: - 实现你的弹幕搜索逻辑
     let ddpList = await searchByDandanPlay(name, episode || "1", playurl || undefined);
     all = all.concat(ddpList);
     backData.data = all;
@@ -67,8 +66,9 @@ async function searchDanMu(name, episode, playurl) {
 }
 
 async function searchByDandanPlay(name, episode, playurl) {
-  let list = [];
-  const retries = 3;
+  const list = [];
+  const maxRetries = 3; // 最大重试次数
+  let retries = 0;
 
   try {
     // 发起搜索请求
@@ -78,7 +78,7 @@ async function searchByDandanPlay(name, episode, playurl) {
     const searchResult = await searchResponse.json();
 
     // 获取 episodeId
-    let episodeId = "";
+    let episodeId = '';
     const seriesPlaylinks = searchResult.data.longData.rows[0].seriesPlaylinks;
     const playlinks = searchResult.data.longData.rows[0].playlinks;
 
@@ -101,6 +101,7 @@ async function searchByDandanPlay(name, episode, playurl) {
     }
 
     console.log(episodeId);
+
     // 检查 episodeId 是否为空
     if (!episodeId) {
       console.log('episodeId is empty, skipping danmu request.');
@@ -108,42 +109,42 @@ async function searchByDandanPlay(name, episode, playurl) {
       return list;
     }
 
-    // 获取弹幕数据
-    let retryCount = 0;
-    while (retryCount < retries) {
-      const danMuResponse = await req(`https://fc.lyz05.cn/?url=${episodeId}`);
-      const danMuResult = await danMuResponse.text();
+    // 获取弹幕数据，带有重试机制
+    let danMuResult;
+    while (retries < maxRetries) {
+      const danMuResponse = await req(`https://dm.s78.top/?ac=dm&key=tH1pX3jH5l&url=${episodeId}`);
+      danMuResult = await danMuResponse.json();
 
-      const regex = /<d p="([^"]+)">([^<]+)<\/d>/g;
-      let match = regex.exec(danMuResult);
-
-      if (match) {
-        while (match !== null) {
-          const [_, pAttributes, content] = match;
-          const time = parseFloat(pAttributes.split(',')[0]);
-          list.push({ time, content });
-          match = regex.exec(danMuResult);
-        }
-        break; // 成功解析，退出重试循环
-      } else {
-        retryCount++;
-        console.log(`No match found, retrying... (${retryCount}/${retries})`);
-        await toast(`弹幕数据获取失败，正在重试... (${retryCount}/${retries})`);
-        await new Promise(resolve => setTimeout(resolve, 1000)); // 等待1秒后重试
+      if (danMuResult.danmuku?.length > 0) {
+        break; // 如果有数据，退出循环
       }
+
+      retries++;
+      console.log(`Retrying... Attempt ${retries} of ${maxRetries}`);
+      await toast(`弹幕数据获取失败，正在重试... (${retries}/${maxRetries})`);
+      await new Promise(resolve => setTimeout(resolve, 1000)); // 等待1秒后重试
+    }
+
+    // 处理弹幕数据
+    if (danMuResult.danmuku?.length > 0) {
+      for (const element of danMuResult.danmuku) {
+        list.push({
+          time: element[0], // 提取 time
+          content: element[4], // 提取 content
+          color: element[2], // 提取 color
+        });
+      }
+    } else {
+      console.log('No danmuku data after retries.');
     }
 
   } catch (error) {
-    console.error('Error:', error);
+    console.error('Error in searchByDandanPlay:', error);
     await toast('弹幕数据解析失败，请稍后重试!');
   }
 
   return list;
 }
-
-
-
-
 
 async function homeContent() {
 }
