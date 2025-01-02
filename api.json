@@ -762,7 +762,21 @@
 		"flagable": 0,
 		"filterPlayFileKeywords": "",
 		"keepPlayFileKeywords": ""
-	}],
+	},{
+    "key": "yiso",
+    "name": "🎏影搜易搜┃仅搜索",
+    "type": 5,
+    "searchable": 1,
+    "filterClass": "",
+    "firstClass": "",
+    "filterPlay": "",
+    "firstPlay": "",
+    "ext": "https://ghproxy.cn/https://raw.githubusercontent.com/alantang1977/xBox/refs/heads/main/json/yiso.js",
+    "flagable": 0,
+    "filterPlayFileKeywords": "",
+    "keepPlayFileKeywords": "",
+    "selectedPlayer": "0"
+  }],
 	"parses": [{
 		"name": "解析1",
 		"type": 0,
